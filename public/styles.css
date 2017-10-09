@@ -1,0 +1,174 @@
+body {
+  width: 100%;
+  background-color: #F4F4F4;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 0px -10px 0px 0px;
+}
+
+#logoimg {
+  display: block;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 10px;
+  background-color: #EDEDED;
+  text-align: left;
+  color: #03579B;
+}
+
+nav a {
+  font-style: none;
+  text-transform: uppercase;
+  color: #03579B;
+  text-decoration: none;
+  word-spacing: 8px;
+}
+
+.sections {
+  margin: 20px;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sections a {
+  font-style: italic;
+  color: #03579B;
+}
+
+i:hover, nav a:hover, .sections a:hover {
+  color: #FFD400;
+}
+
+i {
+  color: black;
+}
+
+#writeForUs {
+  display: block;
+  margin: 0 auto;
+  padding:10px;
+}
+
+.photo, #writeForUs {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+
+/* slide show */
+
+#slideContainer {
+  position: relative;
+}
+
+#photoWrapper {
+	width: 1024px;
+	margin: 0 auto 30px;
+	overflow: hidden;
+}
+
+.slidesOuter {
+	transition: all .3s ease-in-out;
+	display: flex;
+	width: 400%;
+}
+
+.slidesInner {
+  width: 50%;
+  text-align: right;
+}
+
+.articleTitle {
+  display: inline-block;
+  width: 1024px;
+	height: 35px;
+	background-color: #03579B;
+  text-transform: uppercase;
+  font-size: 18px;
+  /*opacity: 0.8;*/
+}
+
+.slidesInner a {
+  color: #EDEDED;
+}
+
+/* -- slide show button -- */
+
+#left {
+  position: absolute;
+  top: 45%;
+  left: 15.5%;
+}
+
+#right {
+  position: absolute;
+  top: 45%;
+  right: 15.5%;
+}
+
+.photoButtons {
+  text-align: center;
+  border: 0px solid white;
+  padding: 10px;
+}
+
+/* -- sign up --*/
+
+#omChatter, #roundUp, #narco {
+	width: 400px;
+	height: 400px;
+  margin: 30px auto;
+	position: relative;
+	overflow: hidden;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.overlay {
+  width: 400px;
+	height: 50px;
+	background-color: #EDEDED;
+	position: absolute;
+	bottom: 0px;
+  left: 0px;
+	opacity: 0.8;
+  font-size: 16px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+/* -- footer -- */
+
+footer {
+  background-color: black;
+  color: #F4F4F4;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+}
+
+footer p {
+  font-style: italic;
+  font-size: 10px;
+}
+
+#submitButton {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  border-width: 1px;
+  padding: 1px;
+}
+
+#submitButton:hover {
+  background-color: #FFD400;
+}

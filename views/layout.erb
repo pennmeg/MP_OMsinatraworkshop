@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <!-- ======= ======= ======= head ======= ======= ======= -->
+	<head>
+		<title>OM Sinatra Project</title>
+		<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600" rel="stylesheet">
+		<script src="https://use.fontawesome.com/be1704dd14.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+  <!-- ======= ======= ======= body ======= ======= ======= -->
+	<body>
+    <header>
+      <img src="img/OM_Website_Banner_4.png" id="logoimg" alt="Observatory Media: Current Events in Focus">
+      <nav>
+        <%= erb :menu %>
+      </nav>
+    </header>
+	    <!-- ======= content ======= -->
+		<div id="yield-container" class="sections">
+			<%= yield %>
+		</div>
+	    <!-- ======= footer ======= -->
+	    <footer>
+				<form method="post" action="/signup" id="subscribeForm">
+					<label for="email">Subscribe to our newsletter</label>
+					<input type="email" id="subscribeEmail" name="email" placeholder="Enter your Email" required>
+					<button id="submitButton" type="submit">Submit</button>
+				</form>
+	      <p>&copy; 2017 Megan Penn</p>
+	    </footer>
+	    <!-- ======= scripts ======= -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="/script.js"></script>
+	</body>
+</html>
